@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+		#myCanvas {
+				width: 100%;
+				<!--border: 1px solid #f00;-->
+			}
+		#name {
+			width: 100%;
+			
+		}
+		#a1 {
+			max-width: 95%;
+			
+		}
+		#b1 {
+			max-width: 95%;
+			
+		}
+		
+	</style>
+    <!-- CSS -->
+     
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+	<link rel="icon" href="./pcflick_icon.png">
+	<link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/sub.css">
+	<script>
+		//var wid = window.innerWidth;
+		//document.getElementById('container').style.width = wid;
+	</script>
+    <title>オオカナ</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<!--//head-->
+
+<body>
+	<div class="wrap">
+		<!--header-->
+		<div class="head_top">
+		<a href="http://mindkeyboard.com/pcflick"><img height="75" src="./haikana_img/ichi/ichi_logo.png" alt=""></a>
+		<header class="header">
+			<div class="inner">
+						<h1 ><span style="font-size: 0.84em;">
+					オオカナはPC版フリックキーボードです！
+					</span>
+				</h1>
+			</div>
+		</header>
+		</div>
+		<!--//header-->
+		<!--container-->
+		<div class="container">
+			<section class="conBox">
+				<div class="inner">
+					<article class="top">
+						<h3 class="tit">
+							<img src="./haikana_img/sub/navi.png" alt="">
+							<div id="stitle">ホーム</div>
+						</h3>
+						<ul class="btnUl">
+							<li>
+								<a href="#" onclick="back();">
+									<img src="./haikana_img/sub/back.png" alt="" class="off">
+									<img src="./haikana_img/sub/back_on.png" alt="" class="on">
+								</a>
+							</li>
+							<li>
+								<a href="#" onclick="setpage(0);">
+									<img src="./haikana_img/sub/home.png" alt="" class="off">
+									<img src="./haikana_img/sub/home_on.png" alt="" class="on">
+								</a>
+							</li>
+						</ul>
+					</article>
+					<article class="bottom">
+						<div class="swiper-slide slide_1">
+							<h3>
+								いらっしゃいませ。<br>
+								オオカナへようこそ。<br>
+								あなたは今日からブラインドタッチができるようになります。<br>
+								下のメニューを順に従ってください。
+							</h3>
+							
+							<div class="menu newMenu">
+
+
+	<a href="javascript:setpage(1)" class="stepCard">
+    <div class="stepBadge">STEP 1</div>
+
+    <div class="stepContent">
+        <div class="stepTitle">キーボードモグラゲーム</div>
+        <div class="stepDesc">まずは楽しく指を動かす練習から</div>
+    </div>
+
+    <div class="arrow">›</div>
+</a>
+
+	<a href="javascript:setpage(2)" class="stepCard">
+    <div class="stepBadge">STEP 2</div>
+
+    <div class="stepContent">
+        <div class="stepTitle">PCフリックを学ぶ</div>
+        <div class="stepDesc">基本の入力ポジションを理解する</div>
+    </div>
+
+    <div class="arrow">›</div>
+</a>
+
+	<a href="javascript:setpage(3)" class="stepCard">
+    <div class="stepBadge">STEP 3</div>
+
+    <div class="stepContent">
+        <div class="stepTitle">ブラインドタッチチャレンジ</div>
+        <div class="stepDesc">実戦モードで挑戦してみよう</div>
+    </div>
+
+    <div class="arrow">›</div>
+</a>
+
+
+</div>
+
+							
+							
+							<div style="text-align:center;">
+								<BR>
+								<BR>
+								<img width=" 100"src="./haikana_img/sub/notice.png" alt="" >
+								<span >
+									 このメニューは物理キーボードがないと利用できません。
+								</span>
+								</div>
+						</div >
+						<div class="swiper-slide slide_2">
+							
+							<div class="content">
+								<!--<script src="https://fast.wistia.com/embed/medias/77vyif05ui.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_77vyif05ui videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/77vyif05ui/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>-->
+							<video id="vd" height="100%" width="100%" controls>
+							
+							<source src="./haikana_img/tu.mp4" type="video/mp4">
+							이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때 화면에 표시됩니다!
+						</video>
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_3">
+							<h3>
+							<span style="font-size: 1.3em;font-weight: 600;">2. 指の位置を覚えましょう</span><br>
+							指1本につき1列！とっても簡単です。
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg4.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_4">
+							<h4 >
+								自分のキーボードにPCフリック表記が無い？<br>
+								大丈夫。<strong>FキーとJキー</strong>だけわかればOKです。<br>
+								PCフリックは完全なブラインドタッチですから！
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg5.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_5">
+							<h3>
+								すべてのFキーとJキーに、ふっくらとしたホームポジションマー<br>
+								クがあります。ここは両手の人差し指を置く場所です。<br>
+								
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg6.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_6">
+							<h3>
+								これが基本となる指の位置です。<br>
+								両手の人差し指をFキーとJキーにあるホームポジションマークに置きます。<br>
+								
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg7.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_7">
+							<h3>
+								これから、各指を上下に動かしてみてください。<br>
+								見なくても正確に見つけることができるほど練習が必要です<br>
+								準備ができたらスペースバーを押してゲームスタート！
+
+								
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg8.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_8">
+							<h3>
+							<span style="font-size: 1.3em;font-weight: 600;">3. フリック式のカナ入力</span><br>
+							PCフリックはPC版フリックキーボードです。スマートフォンでも<br>
+							最初は練習が必要なように、ここでも少し練習してみましょう。
+
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg9.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_9">
+							<h3>
+								指を基本ポジションに置くことが一番重要です。<br>
+								準備ができたらスペースキーを押してください。<br>
+								
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg10.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_10">
+							<h3>
+								それではブラインドタッチスタート！<br>
+								これからはキーボードを見ないでくださいね。<br>
+								
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg11.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						
+						<div class="swiper-slide slide_11">
+								 <!----------------------------------------------------->
+								<h3 id="game"> 
+								キーボードを見ずに入力してみてください。<br>
+					
+								</h3>
+								<div class="content">
+								<div class="imgBox">
+									<canvas id="myCanvas" ></canvas>
+									 <input id="name" type="text" style="position:relative; left:450px;top:-270px;width:150px;" />
+								</div>
+								<ul class="bottom_menu">
+									<li>
+									<a href="javascript:onClick=down()">
+										<img src="./haikana_img/sub/download.png" alt="" class="off">
+										<img src="./haikana_img/sub/download_on.png" alt="" class="on">
+									</a>
+									</li>	
+									<li>
+									<a href="javascript:onClick=copy()">
+									<img src="./haikana_img/sub/copy.png" alt="" class="off">
+									<img src="./haikana_img/sub/copy_on.png" alt="" class="on">
+									</a>
+									</li>
+								</ul> 
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+								</div>
+								
+										
+						</div>			
+									
+						
+						
+						<div class="swiper-slide slide_12">
+							<h3>
+								おめでとうございます！<br>
+								PCフリックの基本ステップが完了しました。<br>
+								
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg13.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_13">
+							<h3>
+							<span style="font-size: 1.3em;font-weight: 600;">4. 予測変換候補の選び方</span><br>
+							PCフリックはリアルタイムで予測変換候補を選ぶのも簡単です。<br>
+							
+
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg14.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_14">
+							<h3>
+								遠くにある方向キーとエンターキーの代わりに<br>
+								フリックキーで簡単入力<br>
+								
+							</h3>
+							<div class="content">
+								<div class="imgBox">
+									<img src="./haikana_img/sub/pg15.png" alt="">
+								</div>
+
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_15">
+						</div>
+						<div class="swiper-slide slide_16">
+					
+						</div>
+						<div class="swiper-slide slide_17">
+						</div>
+						<div class="swiper-slide slide_18">
+							<h3>
+							<span style="font-size: 1.3em;font-weight: 600;">いよいよ最後のステージです。
+							<br>どちらか選んでください。
+
+						
+
+							</h3>
+							<div class="content">
+								<div class="con_menu">
+								
+								<a href="#" onclick="nextcha1();">
+									<img id="a1"  src="./haikana_img/sub/pre.png" alt="" class="off">
+									<!--<img id="a2" src="./haikana_img/sub/pre_on.png" alt="" class="on">-->
+								</a>
+								
+								
+								<a href="#" onclick="nextcha2()">
+									<img id="b1"  src="./haikana_img/sub/chall.png" alt="" class="off">
+									<!--<img id="b2" src="./haikana_img/sub/chall_on.png" alt="" class="on">-->
+								</a>
+								
+								</div>
+								<span class="bottomTxt blinking">次へ (スペースキー)</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide_19">
+						</div>
+						<div class="swiper-slide slide_20">
+						</div>
+						<div class="swiper-slide slide_21">
+						</div>
+						<div class="swiper-slide slide_22">
+						</div>
+						<div class="swiper-slide slide_23">
+						</div>
+						<div class="swiper-slide slide_24">
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+		<!--//container-->
+	</div>
+	<!--<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+<button class="w3-button w3-display-right" onclick="end()">test</button>-->
+  
+  <input type="password" id="pass" name="password" style="width:1px; outline: none; border-color: #fff; color: #fff;">
+
+   <script src="./script_ichi.js"></script>
+</body>
+</html>
